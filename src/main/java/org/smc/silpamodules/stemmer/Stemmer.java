@@ -15,25 +15,56 @@ import java.util.Map;
  */
 public class Stemmer {
 
+    /**
+     * Application context
+     */
     private Context mContext;
+
+    /**
+     * To store all rules defined by file
+     */
     private Map<String, String> mRulesDict;
 
+    /**
+     * Name of rules file
+     */
     private static final String mRulesFileName = "stemmer_ml.rules";
-    private static final String STEMMER_MODULE_NAME = "Stemmer";
-    private static final String STEMMER_MODULE_INFORMATION = "Malayalam Stemmer";
 
+    /**
+     * Module name
+     */
+    public static final String STEMMER_MODULE_NAME = "Stemmer";
+
+    /**
+     * Brief information regarding module
+     */
+    public static final String STEMMER_MODULE_INFORMATION = "Malayalam Stemmer";
+
+    // printing to android log
     private static final String LOG_TAG = "Stemmer Module - Stemmer";
 
+
+    /**
+     * Constructor
+     *
+     * @param context application context
+     */
     public Stemmer(Context context) {
         this.mContext = context;
         this.mRulesDict = new HashMap<String, String>();
         init();
     }
 
+    /**
+     * Called on object creation. Load rules.
+     */
     private void init() {
         loadRules();
     }
 
+    /**
+     * Private function to load rules into a map.
+     */
     private void loadRules() {
 
         BufferedReader br = null;
@@ -120,6 +151,12 @@ public class Stemmer {
         }
     }
 
+    /**
+     * Private function to trim words based on punctuations
+     *
+     * @param word string to be trimmed
+     * @return trimmed string
+     */
     private String trim(String word) {
         char[] punctuations = {'~', '!', '@', '#', '$', '%', '^', '&', '*',
                 '(', ')', '-', '+', '_', '=', '{', '}', '|', ':', ';', '<',
@@ -144,6 +181,13 @@ public class Stemmer {
         return word;
     }
 
+    /**
+     * Private function to get stemmed words
+     * as a map
+     *
+     * @param text string to be stemmed
+     * @return map<String, String>
+     */
     private Map<String, String> stem(String text) {
 
         int wordCount;
@@ -201,10 +245,24 @@ public class Stemmer {
         return resultDict;
     }
 
+    /**
+     * This function is used to get all stemmed words
+     * as a map
+     *
+     * @param text string to be stemmed
+     * @return map<String, String>
+     */
     public Map<String, String> getStemWordsAsMap(String text) {
         return stem(text);
     }
 
+    /**
+     * This function is used to get all stemmed words
+     * in an array
+     *
+     * @param text string to be stemmed
+     * @return string array
+     */
     public String[] getStemWordsAsArray(String text) {
         Map<String, String> stemmedMap = stem(text);
 
@@ -219,12 +277,21 @@ public class Stemmer {
         return result;
     }
 
-
+    /**
+     * This function gives name of the module
+     *
+     * @return name of module
+     */
     public String getModuleName() {
         return STEMMER_MODULE_NAME;
     }
 
-    public String getStemmerModuleInformation() {
+    /**
+     * This function gives a brief description of the module
+     *
+     * @return brief information regarding the module
+     */
+    public String getModuleInformation() {
         return STEMMER_MODULE_INFORMATION;
     }
 }
