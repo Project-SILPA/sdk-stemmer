@@ -11,15 +11,15 @@ You can add this library to your project adding a dependency to your `build.grad
 ## Referencing this module in Android Studio
   - clone a copy of this repository, or download it
   
-    `https://github.com/SujithVadakkepat/Stemmer`
+    `https://github.com/Project-SILPA/sdk-stemmer`
   - Select File -> New Module -> Import existing project -> set path to the cloned/downloaded repository
   - Add the following to `settings.gradle` if not automatically included. Example :
   
-    `include ':MyApp', ':Stemmer'`
+    `include ':MyApp', ':sdk-stemmer'`
   - Add the following to dependencies in `build.gradle` of the project to which you want to reference this module
    
 ## 
     dependencies {
-        compile project(':Stemmer')
+        compile project(':sdk-stemmer')
     }
 

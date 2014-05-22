@@ -3,7 +3,7 @@ import android.test.suitebuilder.annotation.LargeTest;
 import android.test.suitebuilder.annotation.MediumTest;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import org.smc.silpamodules.stemmer.Stemmer;
+import org.silpa.stemmer.Stemmer;
 
 import java.util.Map;
 
@@ -31,7 +31,7 @@ public class TestStemmer extends AndroidTestCase {
     public void testGetModuleName() {
         Stemmer obj = new Stemmer(getContext());
         assertNotNull(obj);
-        assertEquals(Stemmer.STEMMER_MODULE_NAME, obj.getModuleName());
+        assertEquals(Stemmer.MODULE_NAME, obj.getModuleName());
     }
 
     @SmallTest
@@ -40,7 +40,7 @@ public class TestStemmer extends AndroidTestCase {
     public void testGetModuleInformation() {
         Stemmer obj = new Stemmer(getContext());
         assertNotNull(obj);
-        assertEquals(Stemmer.STEMMER_MODULE_INFORMATION, obj.getModuleInformation());
+        assertEquals(Stemmer.MODULE_INFORMATION, obj.getModuleInformation());
     }
 
     @SmallTest

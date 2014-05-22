@@ -1,4 +1,4 @@
-package org.smc.silpamodules.stemmer;
+package org.silpa.stemmer;
 
 import android.content.Context;
 import android.util.Log;
@@ -33,12 +33,12 @@ public class Stemmer {
     /**
      * Module name
      */
-    public static final String STEMMER_MODULE_NAME = "Stemmer";
+    public static final String MODULE_NAME = "Stemmer";
 
     /**
      * Brief information regarding module
      */
-    public static final String STEMMER_MODULE_INFORMATION = "Malayalam Stemmer";
+    public static final String MODULE_INFORMATION = "Malayalam Stemmer";
 
     // printing to android log
     private static final String LOG_TAG = "Stemmer Module - Stemmer";
@@ -283,7 +283,7 @@ public class Stemmer {
      * @return name of module
      */
     public String getModuleName() {
-        return STEMMER_MODULE_NAME;
+        return MODULE_NAME;
     }
 
     /**
@@ -292,6 +292,6 @@ public class Stemmer {
      * @return brief information regarding the module
      */
     public String getModuleInformation() {
-        return STEMMER_MODULE_INFORMATION;
+        return MODULE_INFORMATION;
     }
 }
