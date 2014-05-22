@@ -1,0 +1,4 @@
+Stemmer
+=======
+
+SILPA - Indic Stemmer
