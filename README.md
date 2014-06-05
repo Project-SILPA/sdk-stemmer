@@ -1,7 +1,7 @@
 Stemmer
 =======
 
-Travis master: [![Build Status](https://travis-ci.org/SujithVadakkepat/sdk-stemmer.svg?branch=master)](https://travis-ci.org/SujithVadakkepat/sdk-stemmer)
+Travis master: [![Build Status](https://travis-ci.org/Project-SILPA/sdk-stemmer.svg)](https://travis-ci.org/Project-SILPA/sdk-stemmer) 
 
 SILPA - Indic Stemmer
 
