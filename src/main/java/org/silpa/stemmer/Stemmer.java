@@ -21,14 +21,14 @@ public class Stemmer {
     private Context mContext;
 
     /**
-     * To store all rules defined by file
+     * To store all rules defined by rules file
      */
     private Map<String, String> mRulesDict;
 
     /**
-     * Name of rules file
+     * Resource id of rules file in res/raw
      */
-    private static final String mRulesFileName = "stemmer_ml.rules";
+    private static final int mRulesRawResourceId = R.raw.silpa_sdk_stemmer_ml;
 
     /**
      * Module name
@@ -70,8 +70,8 @@ public class Stemmer {
         BufferedReader br = null;
 
         try {
-            br = new BufferedReader(new InputStreamReader(this.mContext.getResources().
-                    getAssets().open(mRulesFileName)));
+            br = new BufferedReader(new InputStreamReader(this.mContext.getResources()
+                    .openRawResource(mRulesRawResourceId)));
 
             String line = "";
             int lineNumber = 0;
@@ -89,12 +89,7 @@ public class Stemmer {
                     break;
                 }
 
-                if (text.equals("")) {
-                    continue;
-                }
-
-                // comment - ignore
-                if (text.startsWith("#")) {
+                if (text.equals("") || text.startsWith("#")) {
                     continue;
                 }
 
