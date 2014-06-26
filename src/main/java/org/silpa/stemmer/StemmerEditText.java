@@ -2,14 +2,15 @@ package org.silpa.stemmer;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.EditText;
+
+import org.silpa.render.IndicEditText;
 
 import java.util.Map;
 
 /**
  * Created by sujith on 13/6/14.
  */
-public class StemmerEditText extends EditText implements StemmerInterface {
+public class StemmerEditText extends IndicEditText implements StemmerInterface {
 
     /**
      * Context of application

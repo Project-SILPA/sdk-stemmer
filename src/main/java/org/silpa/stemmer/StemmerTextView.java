@@ -2,14 +2,15 @@ package org.silpa.stemmer;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.TextView;
+
+import org.silpa.render.IndicTextView;
 
 import java.util.Map;
 
 /**
  * Created by sujith on 13/6/14.
  */
-public class StemmerTextView extends TextView implements StemmerInterface {
+public class StemmerTextView extends IndicTextView implements StemmerInterface {
 
     /**
      * Context of application
