@@ -19,7 +19,7 @@ public interface StemmerInterface {
      * This function is used to get all stemmed words
      * as a map
      *
-     * @return map<String, String>
+     * @return map
      */
     public Map<String, String> getStemWordsAsMap();
 

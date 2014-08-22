@@ -77,7 +77,7 @@ public class StemmerEditText extends IndicEditText implements StemmerInterface {
      * This function is used to get all stemmed words
      * as a map
      *
-     * @return map<String, String>
+     * @return map
      */
     @Override
     public Map<String, String> getStemWordsAsMap() {

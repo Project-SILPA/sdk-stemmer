@@ -181,7 +181,7 @@ public class Stemmer {
      * as a map
      *
      * @param text string to be stemmed
-     * @return map<String, String>
+     * @return map
      */
     private Map<String, String> stem(String text) {
 
@@ -245,7 +245,7 @@ public class Stemmer {
      * as a map
      *
      * @param text string to be stemmed
-     * @return map<String, String>
+     * @return map
      */
     public Map<String, String> getStemWordsAsMap(String text) {
         return stem(text);
