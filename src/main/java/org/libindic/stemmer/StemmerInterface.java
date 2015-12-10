@@ -1,4 +1,4 @@
-package org.silpa.stemmer;
+package org.libindic.stemmer;
 
 import java.util.Map;
 

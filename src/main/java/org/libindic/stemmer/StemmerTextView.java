@@ -1,9 +1,9 @@
-package org.silpa.stemmer;
+package org.libindic.stemmer;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.silpa.render.IndicTextView;
+import org.libindic.render.IndicTextView;
 
 import java.util.Map;
 

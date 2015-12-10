@@ -1,4 +1,4 @@
-package org.silpa.stemmer;
+package org.libindic.stemmer;
 
 import android.content.Context;
 import android.util.Log;

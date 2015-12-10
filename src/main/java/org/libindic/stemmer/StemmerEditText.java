@@ -1,9 +1,9 @@
-package org.silpa.stemmer;
+package org.libindic.stemmer;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.silpa.render.IndicEditText;
+import org.libindic.render.IndicEditText;
 
 import java.util.Map;
 

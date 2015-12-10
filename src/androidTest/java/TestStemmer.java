@@ -3,7 +3,7 @@ import android.test.suitebuilder.annotation.LargeTest;
 import android.test.suitebuilder.annotation.MediumTest;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import org.silpa.stemmer.Stemmer;
+import org.libindic.stemmer.Stemmer;
 
 import java.util.Map;
 
